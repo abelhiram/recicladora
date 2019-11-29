@@ -37,22 +37,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Recicladora</a>
+        <div class="flex-row-reverse">
+          <a class="" href="#"><img src="{{asset('img/logo3.png')}}" style="width:60px;">
+          <a class="" href="#"><img src="{{asset('img/logo1.png')}}" style="width:150px;">
+        </a>
+        </div>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse-main">
         <ul class="nav navbar-nav navbar-right">
         @guest
           <li><a href="{{url('/')}}">Inicio</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="{{url('/aa')}}">Información</a></li>
-          <li><a href="#google_map">Contacto</a></li>
-          <li><a href="{{url('/login')}}">Login</a></li>
+          
+          <li><a href="{{url('/login')}}">Iniciar sesión</a></li>
           @if (Route::has('register'))
           <li><a href="{{url('/register')}}">Registrar</a></li>
           @endif
         @else
-            <li><a href="{{url('/home')}}">Home</a></li>
+            <li><a href="{{url('/home')}}">Información</a></li>
             <li><a href="{{url('/inicio')}}">Control</a></li>
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -81,30 +83,33 @@
   @yield('content')
 
     <!-- footer -->
+    
     <footer>
-    <div class="container" style="color:#ffff">
+    <div class="container" style="color:#ffff;">
       
       <div class="col-md-4">
         <div style="margin-left:10%; margin-top:20%;">
-        <h1 >asdasd</h1>
+        <a class="" href="#"><img src="{{asset('img/logo3.png')}}" style="width:200px;margin-top:-25px;"></a>
         </div>
       </div>
 
       <div class="col-md-4">
         <div style="margin-left:10%; margin-top:20%;">
-        asdasd
+        
         </div>
       </div>
       <div class="col-md-4">
         <div style="margin-left:10%; margin-top:20%;">
-        asdsd
+        <a href="{{url('/aa')}}"><h1 style="color:white;font-size:30px;"><i>Quiénes somos</i></h1></a>
+        <a href="{{url('/aa#objetivo')}}"><h1 style="color:white;font-size:20px;">Nuestro objetivo</h1></a>
         </div>
       </div>
       
     </div>
     <hr style="width:80%">
-    <p class="text-right" style="color:#ffff; margin-right:10%;">Copyright &copy; recicladora 2019</p>
+    <p class="text-right" style="color:#ffff; margin-right:10%;">Copyright &copy; RecycleNav 2019</p>
   </footer>
+  
   <!-- /footer -->
 
   

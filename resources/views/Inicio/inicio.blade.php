@@ -17,86 +17,72 @@
 #amb h2{
   color:black;
 }
+#about img{
+  height:100%;
+}
 </style>
 @section('content')
-
-  <!-- first section - Home -->
-  <div id="home" class="home" style="color:white;">
-    <div class="text-vcenter">
-      <h1>Recicladora</h1>
-      <h2>Universidad Estatal de Sonora</h2>
-      <a href="#about" style="background-color: transparent; color:white;" class="btn btn-default btn-lg">ÚNETE</a>
+  <!-- video -->
+  <div class="header">
+    <div class="overlay"></div>
+    <video class="vid2" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{{asset('img/residuos.mp4')}}" type="video/mp4">
+    </video>
+    <div class="container ">
+      <div class="d-flex  text-center align-items-center">
+        <br><br><br>
+          <img id="lo" src="{{asset('img/logo2.png')}}">
+          <br><br>
+          <a href="#about" style="background-color: transparent; color:white;" class="btn btn-default btn-lg">Descube más</a>
+      </div>
     </div>
   </div>
-  <!-- /first section -->
+  <!-- /video -->
 
   <!-- second section - About -->
   <div id="about" class="pad-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <img src="https://img.interempresas.net/fotos/1265947.jpeg" alt="" />
+        <div class="col-sm-8">
+          <h1><i>¿Por qué reciclar el plástico?</i></h1>
+          <h3>El reciclaje de plástico, como el de cualquier otro residuo o material, conlleva 
+            una serie de beneficios ambientales, económicos y sociales tan importantes que hacen 
+            del reciclaje una cuestión positiva. En el caso particular del plástico, nos encontramos 
+            con dos motivos extra que hacen de su reciclaje algo muy necesario para la sostenibilidad 
+            de nuestra sociedad:</h3>
         </div>
-        <div class="col-sm-6 text-center">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
-        </div>
+        
       </div>
     </div>
   </div>
   <!-- /second section -->
 
-  <!-- third section - Services -->
-  <div id="services" class="pad-section">
-    <div class="container">
-      <h2 class="text-center">Our Services</h2> <hr />
-      <div class="row text-center">
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-cloud"> </i>
-          <h4>Service 1</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-heart-empty"> </i>
-          <h4>Service 2</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-globe"> </i>
-          <h4>Service 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-leaf"> </i>
-          <h4>Service 4</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /third section -->
 
   <!-- fourth section - Information -->
   <div id="information" class="pad-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
+        <div class="col-sm-6" >
+          <div class="panel panel-default" >
             <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
+              <h2 >Aumento exponencial del uso y consumo del plástico.</h2>
             </div>
             <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+              <h3>Prácticamente vivimos en una sociedad donde el plástico 
+                está presente en casi todos los sectores y que, de no hallar una solución, 
+                puede convertirse en un grave problema.</h3>    
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
+        <div class="col-sm-6" >
+          <div class="panel panel-default" >
             <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
+              <h2 >El plástico es un residuo contaminante poco susceptible a degradarse.</h2>
             </div>
-            <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+            <div class="panel-body lead" >
+              <h3>El plástico es un residuo cuya asimilación por la naturaleza es complicada y 
+                lenta, y este hecho junto con una producción de plásticos en aumento, da como 
+                resultado encontrarnos con una cantidad de residuos considerable y difícil de manejar.</h3>    
             </div>
           </div>
         </div>
@@ -105,48 +91,78 @@
   </div>
   <!-- /fourth section -->
 
-  <!-- fifth section -->
+
+  <!-- third section - Services -->
   <div id="services" class="pad-section">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h3>Parallax scrolling effect is in action</h3>
-          <h4>The next is the address on Google maps</h4>
+      <h2 class="text-center">Usos finales del plástico reciclado.</h2> <hr />
+      <div class="row text-center">
+     
+      <div id="al" >
+          <div class="col-sm-4">
+            <img src="{{asset('img/pet.png')}}" style="width:100px;opacity:0.5">
+            <h3>Plástico Pet.</h3>
+            <h4 style="text-align:center;">Se recicla en partes de ropa y textil, alfombras, 
+            lonas, hilos y cuerdas..</h4>
+            
+          </div>
+          <div class="col-sm-4">
+          <img src="{{asset('img/2.png')}}" style="width:100px;;opacity:0.5">
+            <h3>Plástico Polietileno de alta densidad.</h3>
+            <h4 style="text-align:center;">Se recicla en otros envases dedicado a detergentes, 
+            champús, botellas para aceite u otros usos industriales, tubos y contenedores plásticos, 
+            mesas y estructuras.</h4>
+          </div>
+          <div class="col-sm-4">
+          <img src="{{asset('img/3.png')}}" style="width:100px;;opacity:0.5">
+            <h3>Plástico Policloruro de Vinilo.</h3>
+            <h4 style="text-align:center;">Se recicla en muebles para exteriores y otras estructuras 
+            plásticas como armarios, tuberías de fontanería, vallas, parte de alfombras, equipo eléctrico 
+            y conos.</h4>
+          </div>
+        </div>
+        <div id="al" >
+          <div class="col-sm-4">
+          <img src="{{asset('img/4.png')}}" style="width:100px;;opacity:0.5">
+            <h3>Plástico polietileno de baja densidad.</h3>
+            <h4 style="text-align:center;">Se recicla en bolsas de basura, bolsas para residuos, 
+            contenedores, tablones de plástico y fiml para uso agrícola.</h4>
+          </div>
+          <div class="col-sm-4">
+          <img src="{{asset('img/5.png')}}" style="width:100px;;opacity:0.5">
+            <h3>Plástico Polipropileno</h3>
+            <h4 style="text-align:center;">Se recicla en cajas y envases para medicinas, para transporte, 
+            en sillas de plástico y algunos muebles de jardín, cajas de batería, cables, escobas y cubos 
+            de fregar, botes y algunas herramientas.</h4>
+          </div>
+          <div class="col-sm-4">
+          <img src="{{asset('img/6.png')}}" style="width:100px;;opacity:0.5">
+            <h3>Plástico poliestireno.</h3>
+            <h4 style="text-align:center;">Se recicla en macetas de plástico, aislamientos térmicos, 
+            termómetros, cubiertas, cubos de basura y algunos accesorios para oficinas.</h4>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- /fifth section -->
-
-  <!-- google map -->
+  <!-- /third section -->
+  <!-- video -->
   <div class="header">
-  <div class="overlay"></div>
-  <video class="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-  </video>
-  <div class="container ">
-    <div class="d-flex  text-center align-items-center">
-      <div id="amb" class="w-100 text-white">
-        <h1 class="display-3 ">CUIDA EL AMBIENTE</h1>
-        <h2 class="lead mb-6">MÁS TE VALE QUE LO HAGAS</h2>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- /google map -->
-
-    <!-- fifth section -->
-    <div id="services" class="pad-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h3>Parallax scrolling effect is in action</h3>
-          <h4>The next is the address on Google maps</h4>
+    <div class="overlay"></div>
+    <video class="vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{{asset('img/limp.mp4')}}" type="video/mp4">
+    </video>
+    <div class="container ">
+      <div class="d-flex  text-center align-items-center">
+        <div id="amb" class="w-100 text-white">
+          <h1 class="display-3 ">Reciclar es más que una acción, es el valor de la 
+            responsabilidad por preservar los recursos naturales</h1>
         </div>
       </div>
     </div>
   </div>
-  <!-- /fifth section -->
+  <!-- /video -->
+
 
 
 

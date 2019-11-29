@@ -36,14 +36,14 @@ class actividadController extends Controller
      */
     public function store(Request $request)
     {
-        
-        /*$id = \Auth::user()->id;
+        /*$fecha = date("Y-m-d");
+        $id = \Auth::user()->id;
         $info = actividad::where('user_id', '=', $id)->get(); 
         $f='';
         foreach($info as $i){
 
             $fec = new carbon($i->fecha);
-            $f=$f.$fec->format('N');
+            $f=$f.$fec->format('m');
             
         }
         return $f;*/
@@ -56,7 +56,7 @@ class actividadController extends Controller
         $mdlActividad->fecha = $fecha;
         $mdlActividad->tipo = '2';
         $mdlActividad->save();
-        return 'éxito';
+        
                 
         
     }

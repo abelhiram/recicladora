@@ -25,7 +25,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin:40px;
+        margin-top:130px;
+        text-align:justify ;
+        width:100%;
 
     }
     .frase h1{
@@ -111,7 +113,7 @@
     </div>
     <div class="col-md-7">
     <div class="frase">
-    <h1>-Cuando la tierra esta enferma y contaminada, la salud humana es imposible. Para sanarnos a nosotros mismos, debemos sanar nuestro planeta y para sanar nuestro planeta, debemos sanarnos a nosotros mismos.-Bobby McLeod.</h1>
+    <h1><i>"Lo que hacemos con los bosques del mundo, no es más que un reflejo de lo nos estamos haciendo los unos a los otros"</i> - Mahatma Gandhi.</h1>
     </div>
       </div>
 </div>

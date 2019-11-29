@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="pad-section"></div>
+<div class="container" style="height:40%;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
